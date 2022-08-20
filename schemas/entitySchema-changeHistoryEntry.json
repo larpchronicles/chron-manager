@@ -4,7 +4,7 @@
         "datetimeChanged": "Datetime",
         "entityId": "String",
         "entityType": "String (player|character|item|recipe|etc)",
-        "entityPropertyPath": "String",
+        "entityPropertyPath": "String (ex: character.name, skill.baseCost.fighter, etc.)",
         "previousValue": "String",
         "changedByPlayerId": "String"
     }

@@ -2,6 +2,7 @@
     "document": {
         "documentId": "String",
         "playerId": "playerId",
+        "documentType": "String(waiver|coc)",
         "document": "base64 Image"
     }
 }

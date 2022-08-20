@@ -1,0 +1,13 @@
+{
+    "ibga": {
+        "ibgaId": "String",
+        "ibgaType": "String (ibga, minimod, letter)",
+        "parentIbgaId": "ibgaId",
+        "characterId": "characterId",
+        "eventId": "eventId",
+        "datetimeSubmitted": "Datetime",
+        "response": "String",
+        "responderPlayerId": "playerId",
+        "datetimeResponded": "Datetime"
+    }
+}

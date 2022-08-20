@@ -2,10 +2,11 @@
     "entitySchemas": {
         "player": {
             "playerId": "String",
+            "email": "String",
+            "password": "String",
             "staffPermissions": [ "logistics(print tags)", "checkin(handle money)", "business" ],
             "plotPermissions": [ "part-time(no access)", "full-time" ],
             "name": "String",
-            "email": "String",
             "waiverDocumentId": "documentId",
             "cocDocumentId": "documentId"
         },
@@ -160,6 +161,17 @@
             "mealCardAmount": "double",
             "submittedCovidTest": "Boolean",
             "notes": "String"
+        },
+        "ibga": {
+            "ibgaId": "String",
+            "ibgaType": "String (ibga, minimod, letter)",
+            "parentIbgaId": "ibgaId",
+            "characterId": "characterId",
+            "eventId": "eventId",
+            "datetimeSubmitted": "Datetime",
+            "response": "String",
+            "responderPlayerId": "playerId",
+            "datetimeResponded": "Datetime"
         },
         "goblinPointLogEntry": {
             "goblinPointLogEntryId": "String",
