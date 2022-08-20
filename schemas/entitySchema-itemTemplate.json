@@ -1,0 +1,6 @@
+{
+    "itemTemplate": {
+        "itemTemplateId": "String",
+        "recipeId": "String"
+    }
+}

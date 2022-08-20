@@ -1,0 +1,12 @@
+{
+    "race": {
+        "raceId": "String",
+        "name": "String",
+        "parentRace": "raceId",
+        "racialSkillIds": [
+            "skillId",
+            "skillId",
+            "etc."
+        ]
+    }
+}

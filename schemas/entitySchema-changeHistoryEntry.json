@@ -1,0 +1,11 @@
+{
+    "changeHistoryEntry": {
+        "changeHistoryEntryId": "String",
+        "datetimeChanged": "Datetime",
+        "entityId": "String",
+        "entityType": "String (player|character|item|recipe|etc)",
+        "entityPropertyPath": "String",
+        "previousValue": "String",
+        "changedByPlayerId": "String"
+    }
+}

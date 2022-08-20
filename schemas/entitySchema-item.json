@@ -1,0 +1,11 @@
+{
+    "item": {
+        "itemId": "String",
+        "itemTemplateId": "String",
+        "durabilityMax": "int",
+        "durabilityCurrent": "int",
+        "name": "String",
+        "description": "String",
+        "lines": "Array<String>"
+    }
+}

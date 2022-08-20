@@ -1,0 +1,18 @@
+{
+    "player": {
+        "playerId": "String",
+        "staffPermissions": [
+            "logistics(print tags)",
+            "checkin(handle money)",
+            "business"
+        ],
+        "plotPermissions": [
+            "part-time(no access)",
+            "full-time"
+        ],
+        "name": "String",
+        "email": "String",
+        "signedWaiver": "String(url) or base64 Image",
+        "signedCoc": "String(url) or base64 Image"
+    }
+}

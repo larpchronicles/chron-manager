@@ -1,0 +1,8 @@
+{
+    "strainLogEntry": {
+        "strainLogEntryId": "String",
+        "characterId": "String",
+        "eventId": "String",
+        "quantity": "int"
+    }
+}

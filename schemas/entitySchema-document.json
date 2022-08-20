@@ -1,0 +1,7 @@
+{
+    "document": {
+        "documentId": "String",
+        "playerId": "playerId",
+        "document": "base64 Image"
+    }
+}

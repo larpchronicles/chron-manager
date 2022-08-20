@@ -1,0 +1,9 @@
+{
+    "event": {
+        "eventId": "String",
+        "dateStart": "Date",
+        "dateEnd": "Date",
+        "site": "String",
+        "notes": "String"
+    }
+}

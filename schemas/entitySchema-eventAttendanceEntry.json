@@ -1,0 +1,17 @@
+{
+    "eventAttendanceEntry": {
+        "eventAttendanceEntryId": "String",
+        "playerId": "String",
+        "characterId": "String",
+        "dateStart": "Date",
+        "dateEnd": "Date",
+        "daysAttended": "int",
+        "isNpc": "Boolean",
+        "eventFee": "double",
+        "paymentAmount": "double",
+        "paymentMethod": "String",
+        "mealCardAmount": "double",
+        "submittedCovidTest": "Boolean",
+        "notes": "String"
+    }
+}

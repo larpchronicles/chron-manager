@@ -1,0 +1,14 @@
+{
+    "recipe": {
+        "recipeId": "String",
+        "name": "String",
+        "craftingDisciplineSkillId": "String",
+        "tier": "int",
+        "materials": [
+            {
+                "materialType": "String",
+                "ranksRequired": "<int>"
+            }
+        ]
+    }
+}

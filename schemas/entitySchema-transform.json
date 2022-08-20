@@ -1,0 +1,12 @@
+{
+    "transform": {
+        "transformId": "String",
+        "name": "String",
+        "description": "String",
+        "skills": [
+            {
+                "skillId": "String"
+            }
+        ]
+    }
+}

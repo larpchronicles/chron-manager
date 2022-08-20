@@ -1,0 +1,23 @@
+{
+    "npc": {
+        "npcId": "String",
+        "dateCreated": "date",
+        "name": "String",
+        "description": "String",
+        "bodyPoints": "int",
+        "damageCall": "String",
+        "manaPoints": [
+            {
+                "school": "String",
+                "quantity": "int"
+            }
+        ],
+        "armor": "int",
+        "skills": [
+            {
+                "skillId": "int",
+                "quantity": "int"
+            }
+        ]
+    }
+}

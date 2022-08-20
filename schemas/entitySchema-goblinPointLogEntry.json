@@ -1,0 +1,7 @@
+{
+    "goblinPointLogEntry": {
+        "goblinPointLogEntryId": "String",
+        "playerId": "String",
+        "quantity": "int"
+    }
+}

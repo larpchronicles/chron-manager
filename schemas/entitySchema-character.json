@@ -1,0 +1,38 @@
+{
+    "character": {
+        "characterId": "String",
+        "playerId": "String",
+        "dateCreated": "date",
+        "name": "String",
+        "title": "String",
+        "activeStatus": "String (active|retired|permed)",
+        "race": "String",
+        "skillPointsTotal": "int",
+        "skillPointsSpent": "int",
+        "class": "String",
+        "strain": "int",
+        "bodyPoints": "int",
+        "manaPoints": [
+            {
+                "school": "String",
+                "quantity": "int"
+            }
+        ],
+        "maxArmor": "int",
+        "skills": [
+            {
+                "skillId": "String",
+                "quantity": "int",
+                "skillPointCost": "int"
+            }
+        ],
+        "transform": {
+            "transformId": "String",
+            "dateAcquired": "Date"
+        },
+        "notes": "String",
+        "plotEffects": [
+            "String"
+        ]
+    }
+}

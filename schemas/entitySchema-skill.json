@@ -1,0 +1,28 @@
+{
+    "skill": {
+        "skillId": "String",
+        "name": "String",
+        "description": "String",
+        "isSpSkill": "Boolean",
+        "isTransformSkill": "Boolean",
+        "isRacialSkill": "Boolean",
+        "prerequisites": [
+            {
+                "skillId": "int",
+                "quantity": "int"
+            }
+        ],
+        "baseCosts": {
+            "fighter": "int",
+            "mage": "int",
+            "templar": "int",
+            "rogue": "int"
+        },
+        "scaleCosts": {
+            "fighter": "int",
+            "mage": "int",
+            "templar": "int",
+            "rogue": "int"
+        }
+    }
+}
