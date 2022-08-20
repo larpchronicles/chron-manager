@@ -1,0 +1,208 @@
+{
+    "entitySchemas": {
+        "player": {
+            "playerId": "String",
+            "staffPermissions": [ "logistics(print tags)", "checkin(handle money)", "business" ],
+            "plotPermissions": [ "part-time(no access)", "full-time" ],
+            "name": "String",
+            "email": "String",
+            "signedWaiver": "String(url) or base64 Image", /* move to documents */
+            "signedCoc": "String(url) or base64 Image"
+        },
+        "document": {
+            "documentId": "String",
+            "playerId": "playerId",
+            "document": "base64 Image"
+        },
+        "character": {
+            "characterId": "String",
+            "playerId": "String",
+            "dateCreated": "date",
+            "name": "String",
+            "title": "String",
+            "activeStatus": "String (active|retired|permed)",
+            "race": "String",
+            "skillPointsTotal": "int",
+            "skillPointsSpent": "int",
+            "class": "String",
+            "strain": "int",
+            "bodyPoints": "int",
+            "manaPoints": [
+                {
+                    "school": "String",
+                    "quantity": "int"
+                }
+            ],
+            "maxArmor": "int",
+            "skills": [
+                {
+                    "skillId": "String",
+                    "quantity": "int",
+                    "skillPointCost": "int"
+                }
+            ],
+            "transform": {
+                "transformId": "String",
+                "dateAcquired": "Date"
+            },
+            "notes": "String",
+            "plotEffects": [
+                "String"
+            ]
+        },
+        "skill": {
+            "skillId": "String",
+            "name": "String",
+            "description": "String",
+            "isSpSkill": "Boolean",
+            "isTransformSkill": "Boolean",
+            "isRacialSkill": "Boolean",
+            "prerequisites": [
+                {
+                    "skillId": "int",
+                    "quantity": "int"
+                }
+            ],
+            "baseCosts": {
+                "fighter": "int",
+                "mage": "int",
+                "templar": "int",
+                "rogue": "int"
+            },
+            "scaleCosts": {
+                "fighter": "int",
+                "mage": "int",
+                "templar": "int",
+                "rogue": "int"
+            }
+        },
+        "transform": {
+            "transformId": "String",
+            "name": "String",
+            "description": "String",
+            "skills": [
+                {
+                    "skillId": "String"
+                }
+            ]
+        },
+        "race": {
+            "raceId": "String",
+            "name": "String",
+            "parentRace": "raceId",
+            "racialSkillIds": [ "skillId", "skillId", "etc." ]
+        },
+        "npc": {
+            "npcId": "String",
+            "dateCreated": "date",
+            "name": "String",
+            "description": "String",
+            "bodyPoints": "int",
+            "damageCall": "String",
+            "manaPoints": [
+                {
+                    "school": "String",
+                    "quantity": "int"
+                }
+            ],
+            "armor": "int",
+            "skills": [
+                {
+                    "skillId": "int",
+                    "quantity": "int"
+                }
+            ]
+        },
+        "itemTemplate": {
+            "itemTemplateId": "String",
+            "recipeId": "String"
+        },
+        "item": {
+            "itemId": "String",
+            "itemTemplateId": "String",
+            "durabilityMax": "int",
+            "durabilityCurrent": "int",
+            "name": "String",
+            "description": "String",
+            "lines": "Array<String>"
+        },
+        "recipe": {
+            "recipeId": "String",
+            "name": "String",
+            "craftingDisciplineSkillId": "String",
+            "tier": "int",
+            "materials": [
+                {
+                    "materialType": "String",
+                    "ranksRequired": "<int>"
+                }
+            ]
+        },
+        "event": {
+            "eventId": "String",
+            "dateStart": "Date",
+            "dateEnd": "Date",
+            "site": "String",
+            "notes": "String"
+        },
+        "eventAttendanceEntry": {
+            "eventAttendanceEntryId": "String",
+            "playerId": "String",
+            "characterId": "String",
+            "dateStart": "Date",
+            "dateEnd": "Date",
+            "daysAttended": "int",
+            "isNpc": "Boolean",
+            "eventFee": "double",
+            "paymentAmount": "double",
+            "paymentMethod": "String",
+            "mealCardAmount": "double",
+            "submittedCovidTest": "Boolean",
+            "notes": "String"
+        },
+        "goblinPointLogEntry": {
+            "goblinPointLogEntryId": "String",
+            "playerId": "String",
+            "quantity": "int"
+        },
+        "skillPointLogEntry": {
+            "skillPointLogEntryId": "String",
+            "characterId": "String",
+            "eventId": "String",
+            "quantity": "int"
+        },
+        "strainLogEntry": {
+            "strainLogEntryId": "String",
+            "characterId": "String",
+            "eventId": "String",
+            "quantity": "int"
+        },
+        "changeHistoryEntry": {
+            "changeHistoryEntryId": "String",
+            "datetimeChanged": "Datetime",
+            "entityId": "String",
+            "entityType": "String (player|character|item|recipe|etc)",
+            "entityPropertyPath": "String", /* ex: character.name, skill.baseCost.fighter, etc. */
+            "previousValue": "String",
+            "changedByPlayerId": "String"
+        }
+    },
+    "data": {
+        "players": [ ],
+        "characters": [ ],
+        "races": [ ],
+        "skills": [ ],
+        "transforms": [ ],
+        "npcs": [ ],
+        "itemTemplates": [ ],
+        "items": [ ],
+        "recipes": [ ],
+        "events": [ ],
+        "eventAttendance": [ ],
+        "goblinPointLog": [ ],
+        "productionRequests": [ ],
+        "skillPointLog": [ ],
+        "strainLog": [ ],
+        "changeHistory": [ ]
+    }
+}
