@@ -6,12 +6,13 @@
             "plotPermissions": [ "part-time(no access)", "full-time" ],
             "name": "String",
             "email": "String",
-            "signedWaiver": "String(url) or base64 Image", /* move to documents */
-            "signedCoc": "String(url) or base64 Image"
+            "waiverDocumentId": "documentId",
+            "cocDocumentId": "documentId"
         },
         "document": {
             "documentId": "String",
             "playerId": "playerId",
+            "documentType": "String(waiver|coc)",
             "document": "base64 Image"
         },
         "character": {
@@ -182,7 +183,7 @@
             "datetimeChanged": "Datetime",
             "entityId": "String",
             "entityType": "String (player|character|item|recipe|etc)",
-            "entityPropertyPath": "String", /* ex: character.name, skill.baseCost.fighter, etc. */
+            "entityPropertyPath": "String (ex: character.name, skill.baseCost.fighter, etc.)",
             "previousValue": "String",
             "changedByPlayerId": "String"
         }
