@@ -39,7 +39,7 @@
     //curl -X POST http://localhost:8080/characters -H "Content-Type: application/json" --data '{"email":"foo@bar.com","firstName":"Alice","lastName":"Jones","password":"asfasdf"}'
     router.post("/", (req, res) => {
         let requiredParams = ["playerId"];
-        let query = "INSERT INTO cms_characters (characterId, playerId, name ) VALUES (?, ?, ?)",
+        let query = "INSERT INTO cms_characters (characterId, playerId, name, class ) VALUES (?, ?, ?, ?)",
             queryParams = [],
             characterId;
 
@@ -53,7 +53,7 @@
 
         characterId = uuid.v4();
 
-        queryParams = [characterId, req.body.email, req.body.firstName, req.body.lastName, req.body.password];
+        queryParams = [characterId, req.body.playerId, req.body.name, req.body.class];
         global.connection.query(query, queryParams, (err, queryResults) => {
             if (err) {
                 if (err.code === "ER_DUP_ENTRY") {
@@ -62,7 +62,6 @@
                 }
                 res.send(queryResults);
                 throw(err);
-                return;
             }
             res.send({characterId: characterId});
         });

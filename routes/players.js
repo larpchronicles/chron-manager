@@ -13,8 +13,7 @@
         global.connection.query("SELECT playerId, email, firstName, lastName FROM cms_players", (err, results) => {
             if (err) {throw(err)}
             res.send(results);
-        })
-        //res.send("All players");
+        });
     });
 
 
