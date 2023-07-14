@@ -1,0 +1,111 @@
+{
+    "school_initiation": {
+        "baseCosts": [5,3,5,3],
+        "scaleCosts": [5,4,5,1],
+        "skillset": "magic"
+    },
+    "school_specialization": {
+        "baseCosts": [20,15,20,10],
+        "skillset": "magic"
+    },
+    "mana_attunement": {
+        "baseCosts": [10,3,10,3],
+        "scaleCosts": [10,4,8,1],
+        "skillset": "magic"
+    },
+    "ritual_magic": {
+        "baseCosts": [20,20,20,20],
+        "skillset": "magic"
+    },
+    "one-handed_weapon": {
+        "baseCosts": [3,3,5,8],
+        "skillset": "stamina"
+    },
+    "two-handed_weapon": {
+        "baseCosts": [3,3,5,8],
+        "skillset": "stamina"
+    },
+    "ranged_weapon": {
+        "baseCosts": [3,3,5,8],
+        "skillset": "stamina"
+    },
+    "shield": {
+        "baseCosts": [3,3,5,8],
+        "skillset": "stamina"
+    },
+    "dual_wield": {
+        "baseCosts": [3,3,5,8],
+        "prereqs": ["one-handed_weapon"],
+        "skillset": "stamina"
+    },
+    "parrying_dagger": {
+        "baseCosts": [2,2,2,2],
+        "skillset": "stamina"
+    },
+    "additional_defense_slot": {
+        "baseCosts": [10,10,10,10],
+        "scaleCosts": [30,30,30,30],
+        "skillset": "defense"
+    },
+    "agility": {
+        "baseCosts": [10,20,5,20],
+        "scaleCosts": [10,10,5,10],
+        "skillset": "agility"
+    },
+    "armor_training": {
+        "baseCosts": [3,3,3,3],
+        "scaleCosts": [1,3,3,3],
+        "skillset": "defense"
+    },
+    "dexterity_armor": {
+        "baseCosts": [5,5,5,5],
+        "scaleCosts": [5,5,5,5],
+        "skillset": "defense"
+    },
+    "mimicry": {
+        "baseCosts": [5,20,3,20],
+        "scaleCosts": [10,10,5,10],
+        "skillset": "agility"
+    },
+    "stamina": {
+        "baseCosts": [5,5,5,20],
+        "scaleCosts": [3,5,5,10],
+        "skillset": "stamina"
+    },
+    "toughness": {
+        "baseCosts": [3,3,3,3],
+        "scaleCosts": [3,5,5,5],
+        "skillset": "defense"
+    },
+    "cutpurse": {
+        "baseCosts": [10,10,3,10],
+        "skillset": "other"
+    },
+    "escape_artist": {
+        "baseCosts": [5,5,3,3],
+        "scaleCosts": [2,2,1,1],
+        "skillset": "other"
+    },
+    "first_aid": {
+        "baseCosts": [4,4,4,4],
+        "skillset": "other"
+    },
+    "lockpicking": {
+        "baseCosts": [5,5,3,3],
+        "scaleCosts": [5,5,1,3],
+        "skillset": "other"
+    },
+    "performing": {
+        "baseCosts": [1,1,1,1],
+        "scaleCosts": [1,1,1,1],
+        "skillset": "other"
+    },
+    "tracking": {
+        "baseCosts": [20,20,20,20],
+        "skillset": "other"
+    },
+    "trapping": {
+        "baseCosts": [10,10,3,6],
+        "skillset": "other"
+    }
+}

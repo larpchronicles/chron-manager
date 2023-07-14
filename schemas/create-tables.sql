@@ -54,6 +54,7 @@ CREATE TABLE IF NOT EXISTS cms_skills
     skillId          VARCHAR(40) DEFAULT (uuid()) PRIMARY KEY,
     name             VARCHAR(40),
     description      TEXT,
+    skillset         VARCHAR(40),
     isSpSkill        BOOL,
     IsTransformSkill BOOL,
     isRacialSkill    BOOL,
@@ -67,10 +68,38 @@ CREATE TABLE IF NOT EXISTS cms_skills
     scaleCostRogue   INT
 );
 
-INSERT IGNORE INTO cms_skills (skillId, name, description, isSpSkill, IsTransformSkill, isRacialSkill, baseCostFighter,
+/*INSERT IGNORE INTO cms_skills (skillId, name, description, isSpSkill, IsTransformSkill, isRacialSkill, baseCostFighter,
                                baseCostMage, baseCostTemplar, baseCostRogue, scaleCostFighter, scaleCostMage,
                                scaleCostTemplar, scaleCostRogue)
-VALUES ("00000000-0000-0000-0000-000000000005", "stabbity", "stabs things", TRUE, FALSE, FALSE, 1, 2, 3, 4, 1, 2, 3, 4);
+VALUES ("00000000-0000-0000-0000-000000000005", "stabbity", "stabs things", TRUE, FALSE, FALSE, 1, 2, 3, 4, 1, 2, 3, 4);*/
+
+INSERT IGNORE INTO cms_skills (skillId, name, description, skillset, isSpSkill, IsTransformSkill, isRacialSkill, baseCostFighter, baseCostTemplar, baseCostRogue, baseCostMage, scaleCostFighter, scaleCostTemplar, scaleCostRogue, scaleCostMage) VALUES ("00000001-0001-0001-0001-000000000001", "School Initiation", "School Initiation skill", "magic", true, false, false, 5, 3, 5, 3, 5, 4, 5, 1 );
+INSERT IGNORE INTO cms_skills (skillId, name, description, skillset, isSpSkill, IsTransformSkill, isRacialSkill, baseCostFighter, baseCostTemplar, baseCostRogue, baseCostMage, scaleCostFighter, scaleCostTemplar, scaleCostRogue, scaleCostMage) VALUES ("00000001-0001-0001-0001-000000000002", "School Specialization", "School Specialization skill", "magic", true, false, false, 20, 15, 20, 10, 0, 0, 0, 0 );
+INSERT IGNORE INTO cms_skills (skillId, name, description, skillset, isSpSkill, IsTransformSkill, isRacialSkill, baseCostFighter, baseCostTemplar, baseCostRogue, baseCostMage, scaleCostFighter, scaleCostTemplar, scaleCostRogue, scaleCostMage) VALUES ("00000001-0001-0001-0001-000000000003", "Mana Attunement", "Mana Attunement skill", "magic", true, false, false, 10, 3, 10, 3, 10, 4, 8, 1 );
+INSERT IGNORE INTO cms_skills (skillId, name, description, skillset, isSpSkill, IsTransformSkill, isRacialSkill, baseCostFighter, baseCostTemplar, baseCostRogue, baseCostMage, scaleCostFighter, scaleCostTemplar, scaleCostRogue, scaleCostMage) VALUES ("00000001-0001-0001-0001-000000000004", "Ritual Magic", "Ritual Magic skill", "magic", true, false, false, 20, 20, 20, 20, 0, 0, 0, 0 );
+INSERT IGNORE INTO cms_skills (skillId, name, description, skillset, isSpSkill, IsTransformSkill, isRacialSkill, baseCostFighter, baseCostTemplar, baseCostRogue, baseCostMage, scaleCostFighter, scaleCostTemplar, scaleCostRogue, scaleCostMage) VALUES ("00000001-0001-0001-0001-000000000005", "One-handed Weapon", "One-handed Weapon skill", "stamina", true, false, false, 3, 3, 5, 8, 0, 0, 0, 0 );
+INSERT IGNORE INTO cms_skills (skillId, name, description, skillset, isSpSkill, IsTransformSkill, isRacialSkill, baseCostFighter, baseCostTemplar, baseCostRogue, baseCostMage, scaleCostFighter, scaleCostTemplar, scaleCostRogue, scaleCostMage) VALUES ("00000001-0001-0001-0001-000000000006", "Two-handed Weapon", "Two-handed Weapon skill", "stamina", true, false, false, 3, 3, 5, 8, 0, 0, 0, 0 );
+INSERT IGNORE INTO cms_skills (skillId, name, description, skillset, isSpSkill, IsTransformSkill, isRacialSkill, baseCostFighter, baseCostTemplar, baseCostRogue, baseCostMage, scaleCostFighter, scaleCostTemplar, scaleCostRogue, scaleCostMage) VALUES ("00000001-0001-0001-0001-000000000007", "Ranged Weapon", "Ranged Weapon skill", "stamina", true, false, false, 3, 3, 5, 8, 0, 0, 0, 0 );
+INSERT IGNORE INTO cms_skills (skillId, name, description, skillset, isSpSkill, IsTransformSkill, isRacialSkill, baseCostFighter, baseCostTemplar, baseCostRogue, baseCostMage, scaleCostFighter, scaleCostTemplar, scaleCostRogue, scaleCostMage) VALUES ("00000001-0001-0001-0001-000000000008", "Shield", "Shield skill", "stamina", true, false, false, 3, 3, 5, 8, 0, 0, 0, 0 );
+INSERT IGNORE INTO cms_skills (skillId, name, description, skillset, isSpSkill, IsTransformSkill, isRacialSkill, baseCostFighter, baseCostTemplar, baseCostRogue, baseCostMage, scaleCostFighter, scaleCostTemplar, scaleCostRogue, scaleCostMage) VALUES ("00000001-0001-0001-0001-000000000009", "Dual Wield", "Dual Wield skill", "stamina", true, false, false, 3, 3, 5, 8, 0, 0, 0, 0 );
+INSERT IGNORE INTO cms_skills (skillId, name, description, skillset, isSpSkill, IsTransformSkill, isRacialSkill, baseCostFighter, baseCostTemplar, baseCostRogue, baseCostMage, scaleCostFighter, scaleCostTemplar, scaleCostRogue, scaleCostMage) VALUES ("00000001-0001-0001-0001-0000000000010", "Parrying Dagger", "Parrying Dagger skill", "stamina", true, false, false, 2, 2, 2, 2, 0, 0, 0, 0 );
+INSERT IGNORE INTO cms_skills (skillId, name, description, skillset, isSpSkill, IsTransformSkill, isRacialSkill, baseCostFighter, baseCostTemplar, baseCostRogue, baseCostMage, scaleCostFighter, scaleCostTemplar, scaleCostRogue, scaleCostMage) VALUES ("00000001-0001-0001-0001-0000000000011", "Additional Defense Slot", "Additional Defense Slot skill", "defense", true, false, false, 10, 10, 10, 10, 30, 30, 30, 30 );
+INSERT IGNORE INTO cms_skills (skillId, name, description, skillset, isSpSkill, IsTransformSkill, isRacialSkill, baseCostFighter, baseCostTemplar, baseCostRogue, baseCostMage, scaleCostFighter, scaleCostTemplar, scaleCostRogue, scaleCostMage) VALUES ("00000001-0001-0001-0001-0000000000012", "Agility", "Agility skill", "agility", true, false, false, 10, 20, 5, 20, 10, 10, 5, 10 );
+INSERT IGNORE INTO cms_skills (skillId, name, description, skillset, isSpSkill, IsTransformSkill, isRacialSkill, baseCostFighter, baseCostTemplar, baseCostRogue, baseCostMage, scaleCostFighter, scaleCostTemplar, scaleCostRogue, scaleCostMage) VALUES ("00000001-0001-0001-0001-0000000000013", "Armor Training", "Armor Training skill", "defense", true, false, false, 3, 3, 3, 3, 1, 3, 3, 3 );
+INSERT IGNORE INTO cms_skills (skillId, name, description, skillset, isSpSkill, IsTransformSkill, isRacialSkill, baseCostFighter, baseCostTemplar, baseCostRogue, baseCostMage, scaleCostFighter, scaleCostTemplar, scaleCostRogue, scaleCostMage) VALUES ("00000001-0001-0001-0001-0000000000014", "Dexterity Armor", "Dexterity Armor skill", "defense", true, false, false, 5, 5, 5, 5, 5, 5, 5, 5 );
+INSERT IGNORE INTO cms_skills (skillId, name, description, skillset, isSpSkill, IsTransformSkill, isRacialSkill, baseCostFighter, baseCostTemplar, baseCostRogue, baseCostMage, scaleCostFighter, scaleCostTemplar, scaleCostRogue, scaleCostMage) VALUES ("00000001-0001-0001-0001-0000000000015", "Mimicry", "Mimicry skill", "agility", true, false, false, 5, 20, 3, 20, 10, 10, 5, 10 );
+INSERT IGNORE INTO cms_skills (skillId, name, description, skillset, isSpSkill, IsTransformSkill, isRacialSkill, baseCostFighter, baseCostTemplar, baseCostRogue, baseCostMage, scaleCostFighter, scaleCostTemplar, scaleCostRogue, scaleCostMage) VALUES ("00000001-0001-0001-0001-0000000000016", "Stamina", "Stamina skill", "stamina", true, false, false, 5, 5, 5, 20, 3, 5, 5, 10 );
+INSERT IGNORE INTO cms_skills (skillId, name, description, skillset, isSpSkill, IsTransformSkill, isRacialSkill, baseCostFighter, baseCostTemplar, baseCostRogue, baseCostMage, scaleCostFighter, scaleCostTemplar, scaleCostRogue, scaleCostMage) VALUES ("00000001-0001-0001-0001-0000000000017", "Toughness", "Toughness skill", "defense", true, false, false, 3, 3, 3, 3, 3, 5, 5, 5 );
+INSERT IGNORE INTO cms_skills (skillId, name, description, skillset, isSpSkill, IsTransformSkill, isRacialSkill, baseCostFighter, baseCostTemplar, baseCostRogue, baseCostMage, scaleCostFighter, scaleCostTemplar, scaleCostRogue, scaleCostMage) VALUES ("00000001-0001-0001-0001-0000000000018", "Cutpurse", "Cutpurse skill", "other", true, false, false, 10, 10, 3, 10, 0, 0, 0, 0 );
+INSERT IGNORE INTO cms_skills (skillId, name, description, skillset, isSpSkill, IsTransformSkill, isRacialSkill, baseCostFighter, baseCostTemplar, baseCostRogue, baseCostMage, scaleCostFighter, scaleCostTemplar, scaleCostRogue, scaleCostMage) VALUES ("00000001-0001-0001-0001-0000000000019", "Escape Artist", "Escape Artist skill", "other", true, false, false, 5, 5, 3, 3, 2, 2, 1, 1 );
+INSERT IGNORE INTO cms_skills (skillId, name, description, skillset, isSpSkill, IsTransformSkill, isRacialSkill, baseCostFighter, baseCostTemplar, baseCostRogue, baseCostMage, scaleCostFighter, scaleCostTemplar, scaleCostRogue, scaleCostMage) VALUES ("00000001-0001-0001-0001-0000000000020", "First Aid", "First Aid skill", "other", true, false, false, 4, 4, 4, 4, 0, 0, 0, 0 );
+INSERT IGNORE INTO cms_skills (skillId, name, description, skillset, isSpSkill, IsTransformSkill, isRacialSkill, baseCostFighter, baseCostTemplar, baseCostRogue, baseCostMage, scaleCostFighter, scaleCostTemplar, scaleCostRogue, scaleCostMage) VALUES ("00000001-0001-0001-0001-0000000000021", "Lockpicking", "Lockpicking skill", "other", true, false, false, 5, 5, 3, 3, 5, 5, 1, 3 );
+INSERT IGNORE INTO cms_skills (skillId, name, description, skillset, isSpSkill, IsTransformSkill, isRacialSkill, baseCostFighter, baseCostTemplar, baseCostRogue, baseCostMage, scaleCostFighter, scaleCostTemplar, scaleCostRogue, scaleCostMage) VALUES ("00000001-0001-0001-0001-0000000000022", "Performing", "Performing skill", "other", true, false, false, 1, 1, 1, 1, 1, 1, 1, 1 );
+INSERT IGNORE INTO cms_skills (skillId, name, description, skillset, isSpSkill, IsTransformSkill, isRacialSkill, baseCostFighter, baseCostTemplar, baseCostRogue, baseCostMage, scaleCostFighter, scaleCostTemplar, scaleCostRogue, scaleCostMage) VALUES ("00000001-0001-0001-0001-0000000000023", "Tracking", "Tracking skill", "other", true, false, false, 20, 20, 20, 20, 0, 0, 0, 0 );
+INSERT IGNORE INTO cms_skills (skillId, name, description, skillset, isSpSkill, IsTransformSkill, isRacialSkill, baseCostFighter, baseCostTemplar, baseCostRogue, baseCostMage, scaleCostFighter, scaleCostTemplar, scaleCostRogue, scaleCostMage) VALUES ("00000001-0001-0001-0001-0000000000024", "Trapping", "Trapping skill", "other", true, false, false, 10, 10, 3, 6, 0, 0, 0, 0 );
+
+
+
 
 
 CREATE TABLE IF NOT EXISTS cms_skillprereqs
@@ -80,6 +109,15 @@ CREATE TABLE IF NOT EXISTS cms_skillprereqs
     quantityRequired INT,
     FOREIGN KEY (skillId) REFERENCES cms_skills (skillId),
     FOREIGN KEY (prereqSkillId) REFERENCES cms_skills (skillId)
+);
+
+
+CREATE TABLE IF NOT EXISTS cms_skillReplaces
+(
+    skillId          VARCHAR(40),
+    replaceSkillId    VARCHAR(40),
+    FOREIGN KEY (skillId) REFERENCES cms_skills (skillId),
+    FOREIGN KEY (replaceSkillId) REFERENCES cms_skills (skillId)
 );
 
 

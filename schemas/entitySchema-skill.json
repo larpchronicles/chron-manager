@@ -7,7 +7,7 @@
         "isSpSkill": "Boolean",
         "isTransformSkill": "Boolean",
         "isRacialSkill": "Boolean",
-        "replacesSkill": "int (skillId)",
+        "replacesSkills": "int (skillId)",
         "prerequisites": [
             {
                 "skillId": "FK skills.skillId",
