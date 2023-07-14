@@ -7,7 +7,7 @@
         "materials": [
             {
                 "materialType": "String",
-                "ranksRequired": "<int>"
+                "ranksRequired": "int"
             }
         ]
     }

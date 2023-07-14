@@ -3,9 +3,11 @@
         "skillId": "String",
         "name": "String",
         "description": "String",
+        "skillset" : "String (agility|defense|magic|transform|stamina)",
         "isSpSkill": "Boolean",
         "isTransformSkill": "Boolean",
         "isRacialSkill": "Boolean",
+        "replacesSkill": "int (skillId)",
         "prerequisites": [
             {
                 "skillId": "int",

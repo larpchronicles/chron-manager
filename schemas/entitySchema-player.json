@@ -3,17 +3,10 @@
         "playerId": "String",
         "email": "String",
         "password": "String",
-        "staffPermissions": [
-            "logistics(print tags)",
-            "checkin(handle money)",
-            "business"
-        ],
-        "plotPermissions": [
-            "part-time(no access)",
-            "full-time"
-        ],
+        "staffPermissions": "String (logistics|checkin|business|plot)",
         "name": "String",
         "waiverDocumentId": "documentId",
-        "cocDocumentId": "documentId"
+        "cocDocumentId": "documentId",
+        "goblinPoints": "int (derived)"
     }
 }

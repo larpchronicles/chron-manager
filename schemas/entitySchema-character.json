@@ -6,19 +6,21 @@
         "name": "String",
         "title": "String",
         "activeStatus": "String (active|retired|permed)",
+        "secondaryStatus": "String (primary|secondary|tertiary)",
         "race": "String",
+        "subRace": "String",
         "skillPointsTotal": "int",
         "skillPointsSpent": "int",
+        "skillPointsDebt": "int",
+        "skillPointsEffective": "int (derived)",
         "class": "String",
-        "strain": "int",
-        "bodyPoints": "int",
-        "manaPoints": [
-            {
-                "school": "String",
-                "quantity": "int"
-            }
-        ],
-        "maxArmor": "int",
+        "deaths": "int",
+        "bodyPoints": "int (derived)",
+        "manaPoints": "int (derived)",
+        "staminaPoints": "int (derived)",
+        "agilityPoints": "int (derived)",
+        "maxArmor": "int (derived)",
+        "bankBalance": "int",
         "skills": [
             {
                 "skillId": "String",
@@ -30,9 +32,20 @@
             "transformId": "String",
             "dateAcquired": "Date"
         },
-        "notes": "String",
+        "notes": [
+            "String"
+        ],
         "plotEffects": [
             "String"
         ]
-    }
+    },
+    "audit": [
+        "skillPointsTotal",
+        "skillPointsDebt",
+        "deaths",
+        "bankBalance",
+        "transform",
+        "notes",
+        "plotEffects"
+    ]
 }
