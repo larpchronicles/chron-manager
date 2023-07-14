@@ -1,11 +1,11 @@
 {
     "transform": {
-        "transformId": "String",
+        "transformId": "uuid",
         "name": "String",
         "description": "String",
         "skills": [
             {
-                "skillId": "String"
+                "skillId": "skills.skillId"
             }
         ]
     }

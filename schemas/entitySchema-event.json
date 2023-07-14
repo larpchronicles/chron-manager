@@ -1,6 +1,6 @@
 {
     "event": {
-        "eventId": "String",
+        "eventId": "uuid",
         "dateStart": "Date",
         "dateEnd": "Date",
         "site": "String",

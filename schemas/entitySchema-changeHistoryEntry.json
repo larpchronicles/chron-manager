@@ -1,6 +1,6 @@
 {
     "changeHistoryEntry": {
-        "changeHistoryEntryId": "String",
+        "changeHistoryEntryId": "uuid",
         "datetimeChanged": "Datetime",
         "entityId": "String",
         "entityType": "String (player|character|item|recipe|etc)",

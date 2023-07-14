@@ -1,6 +1,6 @@
 {
     "eventAttendanceEntry": {
-        "eventAttendanceEntryId": "String",
+        "eventAttendanceEntryId": "uuid",
         "playerId": "String",
         "characterId": "String",
         "dateStart": "Date",

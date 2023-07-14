@@ -1,6 +1,6 @@
 {
     "item": {
-        "itemId": "String",
+        "itemId": "uuid",
         "itemTemplateId": "String",
         "durabilityMax": "int",
         "durabilityCurrent": "int",

@@ -1,7 +1,7 @@
 {
     "character": {
-        "characterId": "String",
-        "playerId": "String",
+        "characterId": "uuid",
+        "playerId": "FK players.playerId",
         "dateCreated": "date",
         "name": "String",
         "title": "String",

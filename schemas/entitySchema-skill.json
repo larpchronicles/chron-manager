@@ -1,6 +1,6 @@
 {
     "skill": {
-        "skillId": "String",
+        "skillId": "uuid",
         "name": "String",
         "description": "String",
         "skillset" : "String (agility|defense|magic|transform|stamina)",
@@ -10,7 +10,7 @@
         "replacesSkill": "int (skillId)",
         "prerequisites": [
             {
-                "skillId": "int",
+                "skillId": "FK skills.skillId",
                 "quantity": "int"
             }
         ],

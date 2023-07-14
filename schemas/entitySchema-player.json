@@ -1,12 +1,12 @@
 {
     "player": {
-        "playerId": "String",
+        "playerId": "uuid",
         "email": "String",
         "password": "String",
         "staffPermissions": "String (logistics|checkin|business|plot)",
         "name": "String",
-        "waiverDocumentId": "documentId",
-        "cocDocumentId": "documentId",
+        "waiverDocumentId": "FK documents.documentId",
+        "cocDocumentId": "FK documents.documentId",
         "goblinPoints": "int (derived)"
     }
 }

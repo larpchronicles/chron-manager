@@ -1,7 +1,8 @@
 {
     "goblinPointLogEntry": {
-        "goblinPointLogEntryId": "String",
-        "playerId": "String",
-        "quantity": "int"
+        "goblinPointLogEntryId": "uuid",
+        "playerId": "FK players.playerId",
+        "quantity": "int",
+        "reason": "text"
     }
 }

@@ -13,9 +13,12 @@ fs.readdir(schemaDir, function (err, files) {
         if (filename.search(/^entitySchema-.*\.json$/) > -1) {
             let schema = require(path.join("..", schemaDir, filename));
             let propName = filename.replace("entitySchema-", "").replace(".json", "");
-            outputContent[propName] = schema;
+            Object.keys(schema).forEach(function (propName) {
+                outputContent[propName] = schema[propName];
+            });
         }
     }
-    console.log(JSON.stringify(outputContent, null, 4));
-    
+
+    fs.writeFileSync("schemas/entitySchemas.json", JSON.stringify(outputContent, null, 4), "utf-8");
+
 });

@@ -1,6 +1,6 @@
 {
     "ibga": {
-        "ibgaId": "String",
+        "ibgaId": "uuid",
         "ibgaType": "String (ibga, minimod, letter)",
         "parentIbgaId": "ibgaId",
         "characterId": "characterId",
