@@ -1,110 +1,138 @@
 {
     "school_initiation": {
+        "id": "00000001-0001-0001-0001-000000000001",
         "baseCosts": [5,3,5,3],
         "scaleCosts": [5,4,5,1],
         "skillset": "magic"
     },
     "school_specialization": {
+        "id": "00000001-0001-0001-0001-000000000002",
         "baseCosts": [20,15,20,10],
-        "skillset": "magic"
+        "skillset": "magic",
+        "prereqs": ["00000001-0001-0001-0001-000000000001"]
     },
     "mana_attunement": {
+        "id": "00000001-0001-0001-0001-000000000003",
         "baseCosts": [10,3,10,3],
         "scaleCosts": [10,4,8,1],
-        "skillset": "magic"
+        "skillset": "magic",
+        "prereqs": ["00000001-0001-0001-0001-000000000001"]
     },
     "ritual_magic": {
+        "id": "00000001-0001-0001-0001-000000000004",
         "baseCosts": [20,20,20,20],
         "skillset": "magic"
     },
     "one-handed_weapon": {
+        "id": "00000001-0001-0001-0001-000000000005",
         "baseCosts": [3,3,5,8],
         "skillset": "stamina"
     },
     "two-handed_weapon": {
+        "id": "00000001-0001-0001-0001-000000000006",
         "baseCosts": [3,3,5,8],
         "skillset": "stamina"
     },
     "ranged_weapon": {
+        "id": "00000001-0001-0001-0001-000000000007",
         "baseCosts": [3,3,5,8],
         "skillset": "stamina"
     },
     "shield": {
+        "id": "00000001-0001-0001-0001-000000000008",
         "baseCosts": [3,3,5,8],
         "skillset": "stamina"
     },
     "dual_wield": {
+        "id": "00000001-0001-0001-0001-000000000009",
         "baseCosts": [3,3,5,8],
         "prereqs": ["one-handed_weapon"],
-        "skillset": "stamina"
+        "skillset": "stamina",
+        "prereqs": ["00000001-0001-0001-0001-000000000005"]
     },
     "parrying_dagger": {
+        "id": "00000001-0001-0001-0001-000000000010",
         "baseCosts": [2,2,2,2],
         "skillset": "stamina"
     },
     "additional_defense_slot": {
+        "id": "00000001-0001-0001-0001-000000000011",
         "baseCosts": [10,10,10,10],
         "scaleCosts": [30,30,30,30],
         "skillset": "defense"
     },
     "agility": {
+        "id": "00000001-0001-0001-0001-000000000012",
         "baseCosts": [10,20,5,20],
         "scaleCosts": [10,10,5,10],
         "skillset": "agility"
     },
     "armor_training": {
+        "id": "00000001-0001-0001-0001-000000000012",
         "baseCosts": [3,3,3,3],
         "scaleCosts": [1,3,3,3],
         "skillset": "defense"
     },
     "dexterity_armor": {
+        "id": "00000001-0001-0001-0001-000000000013",
         "baseCosts": [5,5,5,5],
         "scaleCosts": [5,5,5,5],
         "skillset": "defense"
     },
     "mimicry": {
+        "id": "00000001-0001-0001-0001-000000000014",
         "baseCosts": [5,20,3,20],
         "scaleCosts": [10,10,5,10],
-        "skillset": "agility"
+        "skillset": "agility",
+        "prereqs": ["00000001-0001-0001-0001-000000000012"]
     },
     "stamina": {
+        "id": "00000001-0001-0001-0001-000000000015",
         "baseCosts": [5,5,5,20],
         "scaleCosts": [3,5,5,10],
         "skillset": "stamina"
     },
     "toughness": {
+        "id": "00000001-0001-0001-0001-000000000016",
         "baseCosts": [3,3,3,3],
         "scaleCosts": [3,5,5,5],
         "skillset": "defense"
     },
     "cutpurse": {
+        "id": "00000001-0001-0001-0001-000000000017",
         "baseCosts": [10,10,3,10],
         "skillset": "other"
     },
     "escape_artist": {
+        "id": "00000001-0001-0001-0001-000000000018",
         "baseCosts": [5,5,3,3],
         "scaleCosts": [2,2,1,1],
         "skillset": "other"
     },
     "first_aid": {
+        "id": "00000001-0001-0001-0001-000000000019",
         "baseCosts": [4,4,4,4],
         "skillset": "other"
     },
     "lockpicking": {
+        "id": "00000001-0001-0001-0001-000000000020",
         "baseCosts": [5,5,3,3],
         "scaleCosts": [5,5,1,3],
         "skillset": "other"
     },
     "performing": {
+        "id": "00000001-0001-0001-0001-000000000021",
         "baseCosts": [1,1,1,1],
         "scaleCosts": [1,1,1,1],
         "skillset": "other"
     },
     "tracking": {
+        "id": "00000001-0001-0001-0001-000000000022",
         "baseCosts": [20,20,20,20],
         "skillset": "other"
     },
     "trapping": {
+        "id": "00000001-0001-0001-0001-000000000023",
         "baseCosts": [10,10,3,6],
         "skillset": "other"
     }

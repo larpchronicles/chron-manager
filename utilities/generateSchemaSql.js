@@ -34,7 +34,7 @@ Object.keys(skills).forEach(function (key) {
        scaleCostString = skills[key].scaleCosts.join(", ");
    }
 
-   sqlQuery = `${sqlQuery} VALUES ("00000001-0001-0001-0001-00000000000${index}", "${skillName}", "${skillName} skill", "${skills[key].skillset}", true, false, false, ${skills[key].baseCosts[0]}, ${skills[key].baseCosts[1]}, ${skills[key].baseCosts[2]}, ${skills[key].baseCosts[3]}`;
+   sqlQuery = `${sqlQuery} VALUES ("${skills[key].id}", "${skillName}", "${skillName} skill", "${skills[key].skillset}", true, false, false, ${skills[key].baseCosts[0]}, ${skills[key].baseCosts[1]}, ${skills[key].baseCosts[2]}, ${skills[key].baseCosts[3]}`;
    //sqlQuery = {skills[key].scaleCosts[0]}, ${skills[key].scaleCosts[1]}, ${skills[key].scaleCosts[2]}, ${skills[key].scaleCosts[3]} )`;
     sqlQuery = `${sqlQuery}, ${scaleCostString} );`;
    console.log(sqlQuery);
